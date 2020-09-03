@@ -1,0 +1,130 @@
+@import "variables";
+
+header{
+  width: 100%;
+}
+
+.topHeader{
+  height: 11vw;
+  width: 100%;
+  background-color: $headerColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+
+  > .profilePicture{
+    height: 7.37vw;
+    width: 7.37vw;
+    background-image: url("../img/gardenShopLogo.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10000px;
+    margin-right: 1.45vw;
+  }
+
+  > .websiteURL{
+    display: flex;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+
+    > p{
+      color: #ffffff;
+    }
+  }
+}
+
+.stickyHeader{
+  background-color: $headerColor;
+  height: 8.7vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  position: sticky;
+  top: 0;
+
+  > div{
+    display: flex;
+    align-items: center;
+
+    > .fa-tachometer-alt{
+      color: #ffffff;
+      font-size: 4.5vw;
+      margin-right: 1.5vw;
+      margin-bottom: 0.25vw;
+    }
+
+    p{
+      font-weight: bold;
+      font-size: 3.85vw;
+      color: white;
+    }
+  }
+
+  > .fa-bars{
+    color: white;
+    font-size: 5.8vw;
+    cursor: pointer;
+  }
+}
+
+.blurBackdrop{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(0.2vw);
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.menu{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 62%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $headerColor;
+  z-index: 998;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
