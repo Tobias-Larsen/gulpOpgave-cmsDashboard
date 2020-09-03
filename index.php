@@ -15,23 +15,7 @@
 <body>
 
 <!-- Her skal sidens indhold ligge -->
-<div class="topHeader">
-    <div class="profilePicture"></div>
-    <a href="#" class="websiteURL">www.<p>GardenShop</p>.dk</a>
-</div>
-
-<header class="stickyHeader">
-    <div>
-        <i class="fas fa-tachometer-alt"></i>
-        <p>Dashboard</p>
-    </div>
-    <i class="fas fa-bars"></i>
-</header>
-
-<div class="blurBackdrop"></div>
-<section class="menu">
-
-</section class="menu">
+<?php include 'header.php'; ?>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

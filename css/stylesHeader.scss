@@ -70,6 +70,10 @@ header{
     font-size: 5.8vw;
     cursor: pointer;
   }
+
+  > .fa-bars:hover{
+    color: $hoverGreen;
+  }
 }
 
 .blurBackdrop{
@@ -83,16 +87,109 @@ header{
   background-color: rgba(0, 0, 0, 0.66);
 }
 
+.menu.menuHidden{
+  right: -$menuWidth - 10%;
+}
+
 .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: 62%;
+  width: $menuWidth;
   position: fixed;
   top: 0;
   right: 0;
   background-color: $headerColor;
   z-index: 998;
+  border-left: #ffffff solid 1vw;
+  transition: 0.2s;
+
+  .cross{
+    position: absolute;
+    top: $distanceMenu;
+    right: $distanceMenu;
+    height: 8vw;
+    width: 8vw;
+    cursor: pointer;
+
+    > div{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 6.8vw;
+      width: 1vw;
+      background-color: white;
+      transform: translate(-50%, -50%) rotate(45deg);
+      border-radius: 0.2vw;
+    }
+
+    > div:nth-of-type(2){
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  .cross:hover > div{
+    background-color: $hoverGreen;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a{
+      color: $grayColor;
+      font-size: $menuFontSize;
+      text-decoration: none;
+      text-transform: capitalize;
+      margin-bottom: 6vw;
+
+      > svg{
+        margin-right: 2vw;
+      }
+    }
+
+    a.current{
+      color: white;
+    }
+
+    a:hover{
+      color: $hoverGreen;
+    }
+  }
+
+  .user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: $distanceMenu;
+    right: $distanceMenu;
+
+    .fa-user-circle{
+      font-size: $menuFontSize;
+      color: white;
+      margin-bottom: 1.5vw;
+    }
+
+    button{
+      background-color: transparent;
+      border: none;
+      color: $grayColor;
+      font-weight: bold;
+      font-size: 5.5vw;
+      padding: 0;
+      margin-bottom: 0.5vw;
+    }
+
+    .fa-user-circle:hover, button:hover{
+      color: $hoverGreen;
+    }
+  }
 }
 
 
