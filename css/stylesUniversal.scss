@@ -18,3 +18,9 @@ body{
 .noScroll{
   overflow-y: hidden;
 }
+
+$screensize: 414;
+
+@mixin vw($side: width, $size: 10){
+  $side: $screensize / 100 * $size + "vw";
+}
