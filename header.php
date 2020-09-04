@@ -9,6 +9,7 @@
         <p>Dashboard</p>
     </div>
     <i class="fas fa-bars"></i>
+    <i class="fas fa-user-circle clickable"></i>
 </header>
 
 <div class="blurBackdrop hide"></div>

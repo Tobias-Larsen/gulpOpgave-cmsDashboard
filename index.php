@@ -53,7 +53,7 @@
             <div class="block">
                 <div>
                     <p>Total besøgende</p>
-                    <h6>454 besøgende</h6>
+                    <h6>454 pers.</h6>
                 </div>
                 <canvas id="chart3"></canvas>
             </div>
@@ -123,6 +123,18 @@
 <script>
 
     $(function () {
+        let win = $(this); //this = window
+        if (win.width() >= 568) {
+            let blockWidth = $(".analytics .block").width() + 'px';
+            $(".analytics .block").height(blockWidth);
+        }
+
+        $(window).on('resize', function(){
+            if (win.width() >= 568) {
+                let blockWidth = $(".analytics .block").width() + 'px';
+                $(".analytics .block").height(blockWidth);
+            }
+        });
 
         //Global Options
         Chart.defaults.global.defaultFontFamily = 'Arial';

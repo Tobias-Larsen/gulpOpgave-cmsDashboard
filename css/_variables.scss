@@ -13,3 +13,20 @@ $menuFontSize: 6vw;
 $hoverGreen: #4ef541;
 
 $menuWidth: 62%;
+
+
+
+
+// Media queries
+
+$tablet: "screen and (min-width: 568px)";
+
+
+
+
+
+
+
+@media #{$tablet}{
+  $menuWidth: 218px;
+}

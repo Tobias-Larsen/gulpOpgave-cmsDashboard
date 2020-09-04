@@ -73,8 +73,12 @@ header{
     cursor: pointer;
   }
 
-  > .fa-bars:hover{
+  > .fa-bars:hover, .fa-user-circle{
     color: $hoverGreen;
+  }
+
+  > .fa-user-circle{
+    display: none;
   }
 }
 
@@ -195,7 +199,105 @@ header{
   }
 }
 
+@media #{$tablet}{
+  $menuWidth: 218px;
 
+  body{
+    margin-left: auto;
+    width: calc(100% - 218px);
+  }
+
+  .topHeader{
+    height: 88px;
+    width: $menuWidth;
+    background-color: transparent;
+    border-bottom: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+    > .profilePicture{
+      height: 24px;
+      width: 24px;
+      margin-right: 5px;
+    }
+
+    > .websiteURL{
+      font-size: 14px;
+    }
+  }
+
+  .stickyHeader{
+    background-color: $headerColor;
+    height: 30px;
+    width: 100%;
+    padding: 0 3vw;
+    border-left: 2px solid white;
+
+    > div{
+
+      > .fa-tachometer-alt{
+        font-size: 18px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+      }
+
+      p{
+        font-size: 18px;
+      }
+    }
+
+    > .fa-bars{
+      display: none;
+    }
+
+    .fa-user-circle{
+      color: white;
+      display: inline;
+      font-size: 22px;
+    }
+  }
+
+  .blurBackdrop{
+    display: none !important;
+  }
+
+  .menu.menuHidden{
+    right: auto;
+  }
+
+  $menuFontSize: 14px;
+
+  .menu{
+    width: $menuWidth;
+    right: auto;
+    left: 0;
+    top: 0;
+    border-left: none;
+
+    .cross{
+      display: none;
+    }
+
+    nav{
+      align-items: flex-start;
+
+      a{
+        font-size: $menuFontSize;
+        margin-bottom: 24px;
+
+        > svg{
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .user{
+      display: none;
+    }
+  }
+}
 
 
 
