@@ -275,6 +275,8 @@ header{
     left: 0;
     top: 0;
     border-left: none;
+    justify-content: left;
+    align-items: flex-start;
 
     .cross{
       display: none;
@@ -282,6 +284,8 @@ header{
 
     nav{
       align-items: flex-start;
+      margin-left: 36px;
+      margin-top: 160px;
 
       a{
         font-size: $menuFontSize;
@@ -299,7 +303,7 @@ header{
   }
 }
 
-@media #{$tablet}{
+@media #{$pc}{
   $menuWidth: 270px;
 
   body{
@@ -348,6 +352,8 @@ header{
   .menu{
     width: $menuWidth;
     nav{
+      margin-left: 40px;
+      margin-top: 190px;
 
       a{
         font-size: $menuFontSize;
