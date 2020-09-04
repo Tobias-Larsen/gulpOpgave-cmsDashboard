@@ -64,7 +64,7 @@
 
         </div>
 
-        <p class="showMore">Vis alle analytics</p>
+        <p class="showMore clickable">Vis alle analytics</p>
     </section>
 
     <section class="sales main-section">
@@ -81,39 +81,70 @@
         </div>
 
         <div class="recentSalesContainer">
-            <div class="recentSale">
-                <div>Ordrenummer:&nbsp;<p>GDS0000077</p></div>
-                <div>Bestillingsdato:&nbsp;<p>01/09/2020 13:32</p></div>
-                <div>Navn:&nbsp;<p>Tobias Larsen</p></div>
-                <div class="price">Beløb:<p>399.00 DKK</p></div>
+            <div class="infoLabels">
+                <p>Ordrenummer:</p>
+                <p>Bestillingsdato:</p>
+                <p>Navn:</p>
+                <p>Beløb:</p>
             </div>
             <div class="recentSale">
                 <div>Ordrenummer:&nbsp;<p>GDS0000077</p></div>
                 <div>Bestillingsdato:&nbsp;<p>01/09/2020 13:32</p></div>
                 <div>Navn:&nbsp;<p>Tobias Larsen</p></div>
                 <div class="price">Beløb:<p>399.00 DKK</p></div>
+
+                <p>GDS0000077</p>
+                <p>01/09/2020 13:32</p>
+                <p>Tobias Larsen</p>
+                <p>399.00 DKK</p>
             </div>
             <div class="recentSale">
                 <div>Ordrenummer:&nbsp;<p>GDS0000077</p></div>
                 <div>Bestillingsdato:&nbsp;<p>01/09/2020 13:32</p></div>
                 <div>Navn:&nbsp;<p>Tobias Larsen</p></div>
                 <div class="price">Beløb:<p>399.00 DKK</p></div>
+
+                <p>GDS0000077</p>
+                <p>01/09/2020 13:32</p>
+                <p>Tobias Larsen</p>
+                <p>399.00 DKK</p>
             </div>
             <div class="recentSale">
                 <div>Ordrenummer:&nbsp;<p>GDS0000077</p></div>
                 <div>Bestillingsdato:&nbsp;<p>01/09/2020 13:32</p></div>
                 <div>Navn:&nbsp;<p>Tobias Larsen</p></div>
                 <div class="price">Beløb:<p>399.00 DKK</p></div>
+
+                <p>GDS0000077</p>
+                <p>01/09/2020 13:32</p>
+                <p>Tobias Larsen</p>
+                <p>399.00 DKK</p>
             </div>
             <div class="recentSale">
                 <div>Ordrenummer:&nbsp;<p>GDS0000077</p></div>
                 <div>Bestillingsdato:&nbsp;<p>01/09/2020 13:32</p></div>
                 <div>Navn:&nbsp;<p>Tobias Larsen</p></div>
                 <div class="price">Beløb:<p>399.00 DKK</p></div>
+
+                <p>GDS0000077</p>
+                <p>01/09/2020 13:32</p>
+                <p>Tobias Larsen</p>
+                <p>399.00 DKK</p>
+            </div>
+            <div class="recentSale">
+                <div>Ordrenummer:&nbsp;<p>GDS0000077</p></div>
+                <div>Bestillingsdato:&nbsp;<p>01/09/2020 13:32</p></div>
+                <div>Navn:&nbsp;<p>Tobias Larsen</p></div>
+                <div class="price">Beløb:<p>399.00 DKK</p></div>
+
+                <p>GDS0000077</p>
+                <p>01/09/2020 13:32</p>
+                <p>Tobias Larsen</p>
+                <p>399.00 DKK</p>
             </div>
         </div>
 
-        <p class="showMore">Vis alle analytics</p>
+        <p class="showMore clickable">Vis alle analytics</p>
     </section>
 </main>
 
@@ -127,6 +158,7 @@
         if (win.width() >= 568) {
             let blockWidth = $(".analytics .block").width() + 'px';
             $(".analytics .block").height(blockWidth);
+
         }
 
         $(window).on('resize', function(){

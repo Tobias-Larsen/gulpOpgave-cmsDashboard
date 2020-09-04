@@ -299,7 +299,71 @@ header{
   }
 }
 
+@media #{$tablet}{
+  $menuWidth: 270px;
 
+  body{
+    margin-left: auto;
+    width: calc(100% - 270px);
+  }
+
+  .topHeader{
+    height: 100px;
+    width: $menuWidth;
+
+    > .profilePicture{
+      height: 30px;
+      width: 30px;
+    }
+
+    > .websiteURL{
+      font-size: 14px;
+    }
+  }
+
+  .stickyHeader{
+    height: 50px;
+    padding: 0 45px;
+
+    > div{
+
+      > .fa-tachometer-alt{
+        font-size: 28px;
+        margin-right: 10px;
+        margin-bottom: 1px;
+      }
+
+      p{
+        font-size: 24px;
+      }
+    }
+
+    .fa-user-circle{
+      font-size: 30px;
+    }
+  }
+
+  $menuFontSize: 18px;
+
+  .menu{
+    width: $menuWidth;
+    nav{
+
+      a{
+        font-size: $menuFontSize;
+        margin-bottom: 30px;
+
+        > svg{
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .user{
+      display: none;
+    }
+  }
+}
 
 
 

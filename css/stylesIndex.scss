@@ -239,6 +239,10 @@ $sides:(
   background-color: #F5F5F5;
 
   .recentSalesContainer{
+    > .infoLabels{
+      display: none;
+    }
+
     > .recentSale{
       display: grid;
       grid-template-columns: 1fr auto;
@@ -259,6 +263,10 @@ $sides:(
         > p{
           color: $darkGrayColor;
         }
+      }
+
+      > p{
+        display: none;
       }
 
       > .price{
@@ -298,7 +306,7 @@ $sides:(
   }
 
   .main-section{
-    padding: 2.4vw 3vw;
+    padding: 4vw 3vw;
   }
 
   .analytics, .sales{
@@ -375,34 +383,231 @@ $sides:(
       }
 
       > .block:nth-of-type(4){
-        border: none;
-        background-color: #F2F2F2;
-        position: relative;
+        transition: 0.2s;
 
         > div{
-          width: 1vw;
-          height: 9vw;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: #d9d9d9;
-          margin: 0;
-        }
-
-        > div:last-of-type{
-          transform: translate(-50%, -50%) rotate(90deg);
+          width: 0.78vw;
+          height: 7.42vw;
+          transition: 0.2s;
         }
       }
 
+      > .block:nth-of-type(4):hover{
+        background-color: lighten(#F2F2F2, 2);
+
+        > div{
+          height: 9vw;
+        }
+
+      }
+
       > .block:nth-of-type(1),.block:nth-of-type(2){
-        margin-bottom: 4.35vw;
+        margin-bottom: 4vw;
+      }
+    }
+  }
+
+  .sales{
+
+    .recentSalesContainer{
+      > .infoLabels, .recentSale{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 2fr 1.5fr;
+        padding: 0.7vw 0 0.7vw 3vw;
+        grid-gap: 0;
+      }
+
+      > .infoLabels{
+
+        > p{
+          font-size: 1.36vw;
+          color: $lightGrayColor;
+        }
+      }
+
+      > .recentSale{
+        margin-bottom: 1.2vw;
+        border-radius: 0.6vw;
+
+        > div{
+          display: none;
+        }
+
+        > p{
+          display: inline;
+          font-size: 1.36vw;
+          grid-column: auto;
+        }
+
+        > .price{
+          display: none;
+        }
       }
     }
   }
 }
 
+@media #{$pc}{
+  .welcome{
+    height: 13.7vw;
+    padding: 0 3vw;
 
+    > div{
+      font-size: 4.2vw;
+      margin-bottom: 1vw;
+      flex-wrap: wrap;
+
+      > h6{
+        font-size: 4.2vw;
+      }
+    }
+
+    > p{
+      font-size: 2vw;
+    }
+  }
+
+  .main-section{
+    padding: 4vw 3vw;
+  }
+
+  .analytics, .sales{
+    > .infoTop{
+      margin-bottom: 3vw;
+
+      h6{
+        font-size: 2.34vw;
+      }
+
+      > div{
+
+        .fa-sync-alt{
+          font-size: 1.5vw;
+          margin-right: 1vw;
+        }
+
+        > div{
+          border: solid 1px $lightGrayColor;
+          border-radius: 0.5vw;
+          padding: 0.3vw 0.6vw;
+
+          .fa-calendar{
+            font-size: 2vw;
+          }
+
+          p{
+            font-size: 1vw;
+            margin: 0 1vw 0 0.4vw;
+          }
+
+          .fa-chevron-down{
+            font-size: 1.2vw;
+          }
+        }
+      }
+    }
+
+    .showMore{
+      font-size: 1.56vw;
+      margin-top: 2.74vw;
+    }
+  }
+
+  .analytics{
+    .blocksContainer{
+
+      > .block{
+        width: 48%;
+        height: 40vw;
+        border-radius: 2vw;
+
+        > div{
+          margin: 3.4vw 2.4vw;
+
+          > p{
+            font-size: 2.2vw;
+            color: $darkGrayColor;
+            margin-bottom: 0.5vw;
+          }
+
+          > h6{
+            font-size: 3.9vw;
+            font-weight: normal;
+            color: $darkGrayColor;
+          }
+        }
+
+        > canvas{
+          grid-row: 2/3;
+          width: 100%;
+          height: 40vw;
+        }
+      }
+
+      > .block:nth-of-type(4){
+        transition: 0.2s;
+
+        > div{
+          width: 0.78vw;
+          height: 7.42vw;
+          transition: 0.2s;
+        }
+      }
+
+      > .block:nth-of-type(4):hover{
+        background-color: lighten(#F2F2F2, 2);
+
+        > div{
+          height: 9vw;
+        }
+
+      }
+
+      > .block:nth-of-type(1),.block:nth-of-type(2){
+        margin-bottom: 4vw;
+      }
+    }
+  }
+
+  .sales{
+
+    .recentSalesContainer{
+      > .infoLabels, .recentSale{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 2fr 1.5fr;
+        padding: 0.7vw 0 0.7vw 3vw;
+        grid-gap: 0;
+      }
+
+      > .infoLabels{
+
+        > p{
+          font-size: 1.36vw;
+          color: $lightGrayColor;
+        }
+      }
+
+      > .recentSale{
+        margin-bottom: 1.2vw;
+        border-radius: 0.6vw;
+
+        > div{
+          display: none;
+        }
+
+        > p{
+          display: inline;
+          font-size: 1.36vw;
+          grid-column: auto;
+        }
+
+        > .price{
+          display: none;
+        }
+      }
+    }
+  }
+}
 
 
 
