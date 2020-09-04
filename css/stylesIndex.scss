@@ -562,36 +562,22 @@ $sides:(
 
     .recentSalesContainer{
       > .infoLabels, .recentSale{
-        display: grid;
-        grid-template-columns: 1fr 1.5fr 2fr 1.5fr;
-        padding: 0.7vw 0 0.7vw 3vw;
-        grid-gap: 0;
+        padding: 10px 0 10px 40px;
       }
 
       > .infoLabels{
 
         > p{
-          font-size: 1.36vw;
-          color: $lightGrayColor;
+          font-size: 16px;
         }
       }
 
       > .recentSale{
-        margin-bottom: 1.2vw;
-        border-radius: 0.6vw;
-
-        > div{
-          display: none;
-        }
+        margin-bottom: 20px;
+        border-radius: 5px;
 
         > p{
-          display: inline;
-          font-size: 1.36vw;
-          grid-column: auto;
-        }
-
-        > .price{
-          display: none;
+          font-size: 16px;
         }
       }
     }
