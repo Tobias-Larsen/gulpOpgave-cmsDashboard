@@ -358,6 +358,7 @@ $sides:(
         width: 48%;
         height: 40vw;
         border-radius: 2vw;
+        transition: 0.2s;
 
         > div{
           margin: 3.4vw 2.4vw;
@@ -449,67 +450,65 @@ $sides:(
 
 @media #{$pc}{
   .welcome{
-    height: 13.7vw;
-    padding: 0 3vw;
+    height: 160px;
+    padding: 0 40px;
 
     > div{
-      font-size: 4.2vw;
-      margin-bottom: 1vw;
-      flex-wrap: wrap;
+      font-size: 50px;
+      margin-bottom: 10px;
 
       > h6{
-        font-size: 4.2vw;
+        font-size: 50px;
       }
     }
 
     > p{
-      font-size: 2vw;
+      font-size: 24px;
     }
   }
 
   .main-section{
-    padding: 4vw 3vw;
+    padding: 66px 40px;
   }
 
   .analytics, .sales{
     > .infoTop{
-      margin-bottom: 3vw;
+      margin-bottom: 40px;
 
       h6{
-        font-size: 2.34vw;
+        font-size: 36px;
       }
 
       > div{
 
         .fa-sync-alt{
-          font-size: 1.5vw;
-          margin-right: 1vw;
+          font-size: 24px;
+          margin-right: 22px;
         }
 
         > div{
-          border: solid 1px $lightGrayColor;
-          border-radius: 0.5vw;
-          padding: 0.3vw 0.6vw;
+          border-radius: 5px;
+          padding: 5px 10px;
 
           .fa-calendar{
-            font-size: 2vw;
+            font-size: 30px;
           }
 
           p{
-            font-size: 1vw;
-            margin: 0 1vw 0 0.4vw;
+            font-size: 16px;
+            margin: 0 10px 0 5px;
           }
 
           .fa-chevron-down{
-            font-size: 1.2vw;
+            font-size: 20px;
           }
         }
       }
     }
 
     .showMore{
-      font-size: 1.56vw;
-      margin-top: 2.74vw;
+      font-size: 16px;
+      margin-top: 38px;
     }
   }
 
@@ -517,54 +516,44 @@ $sides:(
     .blocksContainer{
 
       > .block{
-        width: 48%;
-        height: 40vw;
-        border-radius: 2vw;
+        grid-template-rows: 35% 1fr;
+        width: 24%;
+        height: 160px;
+        border-radius: .5vw;
 
         > div{
-          margin: 3.4vw 2.4vw;
+          margin: 26px 20px;
+          z-index: 2;
 
           > p{
-            font-size: 2.2vw;
-            color: $darkGrayColor;
-            margin-bottom: 0.5vw;
+            font-size: 16px;
+            margin-bottom: 6px;
           }
 
           > h6{
-            font-size: 3.9vw;
-            font-weight: normal;
-            color: $darkGrayColor;
+            font-size: 32px;
           }
-        }
-
-        > canvas{
-          grid-row: 2/3;
-          width: 100%;
-          height: 40vw;
         }
       }
 
       > .block:nth-of-type(4){
-        transition: 0.2s;
 
         > div{
-          width: 0.78vw;
-          height: 7.42vw;
-          transition: 0.2s;
+          width: 8px;
+          height: 80px;
         }
       }
 
       > .block:nth-of-type(4):hover{
-        background-color: lighten(#F2F2F2, 2);
 
         > div{
-          height: 9vw;
+          height: 100px;
         }
 
       }
 
       > .block:nth-of-type(1),.block:nth-of-type(2){
-        margin-bottom: 4vw;
+        margin-bottom: 0;
       }
     }
   }
